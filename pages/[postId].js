@@ -46,6 +46,10 @@ function Blog() {
           setTitle(await snapshot.val().title);
           setContent(await snapshot.val().content);
           setImageUrl(await snapshot.val().imageUrl);
+          setCreatorName(await snapshot.val().creatorName);
+          setCreatorPhotoUrl(await snapshot.val().creatorPhotoUrl);
+          setCreatorUid(await snapshot.val().creatorUid);
+          setCreatedAt(await snapshot.val().createdAt);
           console.log(post);
         }
       });
@@ -73,10 +77,6 @@ function Blog() {
       if (snapshot.exists()) {
         const comments = Object.keys(await snapshot.val());
         setCommentsCount(comments.length);
-        setCreatorName(await snapshot.val().creatorName);
-        setCreatorPhotoUrl(await snapshot.val().creatorPhotoUrl);
-        setCreatorUid(await snapshot.val().creatorUid);
-        setCreatedAt(await snapshot.val().createdAt);
       } else {
         setCommentsCount(0);
       }
