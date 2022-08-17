@@ -199,7 +199,7 @@ export default function NewPost({
                   </>
                 ),
               }}
-              value={imageFile}
+              value={imageUrl || imageFile}
               onChange={(e) => {
                 if (imageFile) {
                   setImageUrl(imageUrl);

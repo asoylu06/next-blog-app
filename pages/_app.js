@@ -22,7 +22,7 @@ export default function MyApp(props) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta name="description" content="Blog App Project" />
         <link rel="icon" href="./assets/images/SUSLU.png" />
-        <title>SUSLU Blog App</title>
+        <title>SOYLU Blog App</title>
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
